@@ -1,4 +1,5 @@
 from calc_func import do_addition, do_subtraction
+from multiply import do_multiplication
 
 
 def main():
@@ -6,6 +7,7 @@ def main():
     print(""" Select the function from the given option
           1. Add
           2. Subtract
+          3. Multiply
           """)
     user_input= input("Select the function 2")
     
@@ -16,7 +18,8 @@ def main():
         print(do_addition(a,b))
     elif user_input == "2":
         print(do_subtraction(a,b))
-        
+    elif user_input=="3":
+        print(do_multiplication(a,b))
 if __name__=='__main__':
     main()
         
